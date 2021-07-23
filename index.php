@@ -7,7 +7,7 @@ if(!isset($_GET['url'])){
 	exit(0);
 }
 $url = $_GET['url'];
-header('Content-Type: application/octet-stream');
+header('Content-Type: application/zip');
 header('Content-Transfer-Encoding: Binary'); 
 header('Content-disposition: attachment; filename="story.zip"'); 
 readfile($url);
